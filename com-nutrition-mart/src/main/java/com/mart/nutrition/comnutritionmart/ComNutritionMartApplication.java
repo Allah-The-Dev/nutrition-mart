@@ -7,7 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ComNutritionMartApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ComNutritionMartApplication.class, args);
+    SpringApplication.run(ComNutritionMartApplication.class, args);
+
+    GreetingWebClient gwc = new GreetingWebClient();
+    System.out.println(gwc.getResult());
 	}
 
 }
